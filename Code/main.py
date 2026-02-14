@@ -290,7 +290,7 @@ def spice_to_dict(param_str):
 # params = spice_to_dict(".param Cin=32.18p Ibmain=572.25u Rmp=0.9 Sa=0.985 Sa_b=17 R34=95")
 # main(filename, Sa=params["Sa"], Rmp=params["Rmp"], R34=params["R34"], Ibmain=params["Ibmain"], Cin=params["Cin"], Sa_b=params["Sa_b"])
 
-# REQUIREMENTS+ALMOSTSAT+
+# REQUIREMENTS+ALMOSTSAT+175.333
 params = spice_to_dict(".param Cin=32.36p Ibmain=572.1u Rmp=0.907 Sa=0.986 Sa_b=16.907 R34=95")
 main(filename, Sa=params["Sa"], Rmp=params["Rmp"], R34=params["R34"], Ibmain=params["Ibmain"], Cin=params["Cin"], Sa_b=params["Sa_b"])
 
