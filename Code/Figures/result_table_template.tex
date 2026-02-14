@@ -1,0 +1,42 @@
+\begin{longtblr}[
+    theme=fancy, 
+    caption={Table of Results with personal specifications},
+    label={tblr:tbr},
+    note{a}={\footnotesize Separate supply used for biasing},
+    note{b}={\footnotesize Figure of Merit may exceed 176dB for good designs},
+    presep=3pt,postsep=3pt,
+]{
+    colspec={Q[1]|Q[15]|Q[2]|Q[5]|Q[5]}, width=\linewidth,
+    cell{2-Z}{3-5} = {mode=math},
+    cell{3-Z}{3} = {cmd=\unit},
+    row{odd}={gray8!70}, row{even}={gray6!70},
+    cell{2-Z}{1}={cmd=\DesignItem},
+    abovesep=1.7pt,
+    belowsep=1.7pt,
+}
+& Design item & Unit & Specification & Achieved \\ \hline 
+& Design Number & \SetCell[c=3]{c} 34 & \\ 
+& SNR & dB & 83.65 & __SNR__ \\ 
+& $A_{settle}$ & dB & 57 & 57 \\ 
+& $T_{settle}$ & \mu s & 2.41 & __T_settle__ \\ 
+& $BW_{cl}$ from open-loop AC simulations & MHz & & __BW_ol__\\ 
+& $BW_{cl}$ from closed-loop AC simulations & MHz & & __BW_cl__ \\ 
+& Time-constant $\tau_{cl}$ from closed-loop AC simulations & \mu s & & __tau_cl__ \\ 
+& $T_{40dB}$ (time to reach an accuracy of 40 dB) & \mu s & & __T_40dB__ \\ 
+& $T_{48.69dB}$ (time to reach an accuracy of 48.69 dB) & \mu s & & __T_48dB__ \\
+& Time-constant $\tau_{cl}$ from transient simulation & \mu s & & __tau_cl_tran__ \\ 
+& Power dissipation\TblrNote{a} & \mu W & \text{Lowest possible} & __P__ \\ 
+& $I(V_{dd})$\TblrNote{a} & \mu A & \text{Lowest possible} & __I__ \\
+& Total integrated noise & \mu V_{rms} & 55.74 & __V_int__ \\ 
+& Input step voltage & mV & 150 & 150 \\ 
+& Output step voltage & V & 1.2 & 1.2 \\ 
+& $C_{in}$ & pF & & __Cin__ \\ 
+& $C_{fb}$ & pF & & __Cfb__ \\ 
+& $C_{load}$ & pF & & __Cload__ \\ 
+& $C_{CM}$ & pF & & __Ccm__ \\ 
+& $R_{big}$ & G \Omega & Big & 1 \\ 
+& $C_{big}$ & uF & Big & 1 \\
+& Bonus points on $FoM_{dB}$ & dB & 0 & 0\\ 
+& $FoM_{lin}=2\pi P T_{8.6dB}/SNR_{lin}^{2}$ & aJ & \leq 3.98 & __FOM_lin__ \\ 
+& $FoM_{dB}=-10\log_{10}(FoM_{lin})$ & dB & \geq 174.0\TblrNote{b} & __FOM_dB__
+\end{longtblr}

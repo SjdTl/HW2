@@ -1,0 +1,120 @@
+* C:\Users\terlo\OneDrive\University\Master\Assignments\Track core\Analog CMOS Design I\HW2\Code\Circuits\closed_loop.asc
+XX1 N003 N007 N005 N001 Vop Von op_amp params: Rbn={Rbn} Rbp={Rbp} Sa={Sa} Rmp={Rmp} R34={R34} Ibmain = {Ibmain} Sa_b = {Sa_b} Cin={Cin}
+Vdd N003 0 1.8
+Vddb N007 0 1.8
+Cin1 N001 N002 {Cin}
+Rin1 N001 N002 {Rin}
+Cin2 N005 N006 {Cin}
+Rin2 N005 N006 {Rin}
+Cfb1 Vop N001 {Cin/8}
+Rfb1 Vop N001 {Rin*8}
+Cfb2 Von N005 {Cin/8}
+Rfb2 Von N005 {Rin*8}
+Cload1 0 Vop {Cin}
+Cload2 Von 0 {Cin}
+B1 N002 N004 V=-V(Vi)/2
+B2 N006 N004 V=V(Vi)/2
+V1 N004 0 0.9
+Vi Vi 0 PULSE(0 150m 1u 100f 100f 10m 0 1) AC 1
+E1 Vo 0 Vop Von 1
+
+* block symbol definitions
+.subckt op_amp Vdd Vddb Vi+ Vi- Vo+ Vo-
+Mp2 Vo- Vpg Vpmr Vdd pch l={L} w={W} m={Sa*Rmp*2}
+Mn6 Vo- N003 Vnmr 0 nch l={L} w={W} m={Sa*2}
+Mp4 Vo+ N001 Vpml Vdd pch l={L} w={W} m={Sa*Rmp*2}
+XX1 Vbn Vbp Vcn Vcp Vddb Vsn Vsp biasing_circuit params: Rbn={Rbn} Rbp={Rbp} Ibmain={Ibmain} Sa = {Sa_b} Rmp = {Rmp}
+XX3 Vcn Vnml Vnmr N003 N002 gain_boosting_nmos
+XX4 Vcp Vpml Vpmr Vpg N001 gain_boosting_pmos
+XX2 Vbcm Vbn Vo+ Vo- cmfb params: Cin={Cin}
+Mp3 Vpml Vbp Vdd Vdd pch l={L} w={W} m={4*Sa*Rmp}
+Mp1 Vpmr Vbp Vdd Vdd pch l={L} w={W} m={4*Sa*Rmp}
+Mn8 Vo+ N002 Vnml 0 nch l={L} w={W} m={Sa*2}
+Mn5 Vnmr Vbcm 0 0 nch l={L} w={W} m={Sa*2}
+Mn7 Vnml Vbcm 0 0 nch l={L} w={W} m={Sa*2}
+Mn1 Vssi Vbn 0 0 nch l={L} w={W} m={4*Sa}
+Mn2 Vsi Vcn Vssi 0 nch l={L} w={W} m={4*Sa}
+Mn3 Vpmr Vi+ Vsi 0 nch l={L} w={W} m={Sa*R34}
+Mn4 Vpml Vi- Vsi 0 nch l={L} w={W} m={Sa*R34}
+.lib 'C:\Users\terlo\OneDrive\Documenten\LTspiceXVII\lib\cmp\log018.l' TT
+.params W=1u L=0.18u
+.param Rbn=4.8 Rbp=6.2
+.param Sa=1 Rmp=1 R34=2.5 Sa_b=0.4 Cin=10p
+.param Ibmain=200u
+.ends op_amp
+
+.subckt biasing_circuit Vbn Vbp Vcn Vcp Vdd Vsn Vsp
+Mn2 Vbn Vcn Vsn 0 nch l={L} w={W} m={Sa*2}
+Ibmain Vbp Vbn {Ibmain}
+Ibncas Vdd Vcn {Ibncas}
+Mp2 Vbp Vcp Vsp Vdd pch l={L} w={W} m={Sa*Rmp*2}
+Mp1 Vsp Vbp Vdd Vdd pch l={L} w={W} m={Sa*Rmp*2}
+Mn3 Vcn Vcn 0 0 nch l={L} w={W} m={Sa*2}
+Ibpcas Vcp 0 {Ibpcas}
+Mp3 Vcp Vcp Vdd Vdd pch l={L} w={W} m={Sa*Rmp*2}
+Mn1 Vsn Vbn 0 0 nch l={L} w={W} m={Sa*2}
+C1 Vdd Vbp {Cbig}
+C2 Vdd Vsp {Cbig}
+C3 Vcp vdd {Cbig}
+C4 0 Vcn {Cbig}
+C5 0 Vsn {Cbig}
+C6 0 Vbn {Cbig}
+.lib 'C:\Users\terlo\OneDrive\Documenten\LTspiceXVII\lib\cmp\log018.l' TT
+.params W=1u L=0.18u
+.param Ibmain=200u Rbn=4.8 Rbp=6.2
+.param Ibpcas = {Ibmain*Rbp} Ibncas = {Ibmain*Rbn}
+.param Cbig=1u
+.param Sa=0.4
+.param Rmp=4.85
+.ends biasing_circuit
+
+.subckt gain_boosting_nmos Vcn Vg Vn Vo+ Vo-
+B1 N001 Vo- V={Aadd}*(V(Vg)-V(Vn))/2
+B2 Vo+ N001 V={Aadd}*(V(Vg)-V(Vn))/2
+B3 N001 0 V=V(Vcn)
+.param Aadd=100
+.ends gain_boosting_nmos
+
+.subckt gain_boosting_pmos Vcp Vg Vp Vo+ Vo-
+B1 N001 Vo- V={Aadd}*(V(Vg)-V(Vp))/2
+B2 Vo+ N001 V={Aadd}*(V(Vg)-V(Vp))/2
+B3 N001 0 V=V(Vcp)
+.param Aadd=100
+.ends gain_boosting_pmos
+
+.subckt cmfb Vbcm Vbn Vo+ Vo-
+R1 N001 Vo+ {Rbig}
+C1 Vo+ Vbcm {CCM}
+B1 N001 Vbcm V=0.9-V(Vbn)
+R2 Vo- N001 {Rbig}
+C2 Vo- Vbcm {CCM}
+.param Cin=10n Rbig=1G CCM={Cin/8}
+.ends cmfb
+
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\terlo\OneDrive\Documenten\LTspiceXVII\lib\cmp\standard.mos
+.param Rbn=4.8 Rbp=6.2
+.param Cin=3.236e-11 Ibmain=0.0005721 Rmp=0.907 Sa=0.986 Sa_b=16.907 R34=95
+.lib 'C:\Users\terlo\OneDrive\Documenten\LTspiceXVII\lib\cmp\log018.l' TT
+.param Rin=100G
+;tran 0 3.41u 1.001u 0.005u
+* 20*log10(1.2/abs(V(n005,n001)))
+;ac dec 100 1 100G
+;noise V(Vo) Vi dec 10 10k 100G
+;meas TRAN A0 FIND 20*log10(1.2/abs(V(n005,n001))) AT 0u
+.meas TRAN A1 FIND 20*log10(1.2/abs(V(n005,n001))) AT 2.405u
+.meas TRAN current FIND I(Vdd)*1e6 AT 2.405u
+;meas TRAN FoM PARAM min(0.4*pow(2.5,(abs(A0-19.3))) + 0.1*pow(10,(abs(A1-57.3))) + abs(current),50Meg)
+;save I(Vdd) V(n005) V(n001)
+;step dec param Sa 1 5000 5
+;step dec param Sa_b 1 5000 5
+;step dec param Ibmain 1u 1000u 5
+;op
+;meas NOISE vorms INTEG V(onoise)*1e6 FROM 10k TO 100G
+; Simulation settings
+.tran 0 100u 0 0.005u
+.save V(vop) V(n001) V(n005) V(von) V(n006) V(n002) I(vdd)
+.options plotwinsize=0
+.backanno
+.end

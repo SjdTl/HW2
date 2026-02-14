@@ -1,0 +1,46 @@
+\section{Bode-Diagram of $A$ and $A\beta$}
+\label{sec:bode_open}
+\textit{
+    Plot of the amplifier gain $A$ and the loop gain $A\beta$ versus $1Hz<f<100GHz$, with the gain- and phase margin, unity-gain frequency $f_{unity}$, $\beta$ and the time-constant of the closed-loop system indicated in the plot \\ 
+    Also explain the difference between loading the $\beta$-network with the OpAmp input or not while making sure the opamp is in the same state it normally is (inputs biased around CM-level, output biased around the CM-level and all currents identical to the normal situation)
+}
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=\linewidth]{Code/Figures/closed_loop_unloaded_ac.pdf}
+    \caption{Bode diagram of $A$ and $A\beta$ unloaded}
+\end{figure}
+
+These high phase and gain margins means the system is very stable and there will not be any ringing in the output or virtual ground, which is exactly what can be seen in \autoref{app:transient_analysis} and \autoref{sec:plot_settling}.
+
+\newpage
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=\linewidth]{Code/Figures/closed_loop_loaded_ac.pdf}
+    \caption{Bode diagram of $A$ and $A\beta$ loaded}
+\end{figure}
+
+Loading the $\beta$-network with a copy of the amplifier adds a Miller capacitor to the feedback network to ground. This will obviously therefore not change DC and only have some influence at higher frequencies. The (not-Miller) input capacitance is given by $C_{g}=WLC_{ox}/3$ in parallel (approximating to only channel capacitance in the saturation region). This capacitance will be way smaller than any other capacitance in the circuit and will have little influence. In \autoref{tab:operating_point1} the capacitance can be seen to be in the order of $10^{-14}$. This is exactly what can be seen in the graphs; no relevant difference.
+
+\newpage 
+\section{Bode-diagram of closed-loop gain}
+\label{sec:bode_closed}
+\textit{
+    Plot the closed-loop gain versus $1Hz<f<100GHz$ showing an 8 times = 18.06 dB gain, with the -3dB bandwidth and closed-loop time-constant indicated \\ 
+    Also compare the difference between the open- and closed-loop simulation
+}
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=\linewidth]{Code/Figures/closed_loop_ac.pdf}
+    \caption{Closed loop ac simulation}
+\end{figure}
+
+As expected and also explained in the design section, the open-loop and closed-loop simulation are in line with each other in terms of bandwidth. You can also use $A_{CL}=\dfrac{A_{OL}}{1+A_{OL}\beta}(1-\beta)$ to determine the closed loop gain from the open loop gain and feedback factor. That is shown in the next figure. 
+
+From this figure, it is clear that there still is a difference between the two simulations, despite the bandwidth being equal. The reason for this is that the first pole is counted double. That is the pole due to the load capacitance, which is not included in the previous equation. 
+
+\begin{figure}[ht!]
+    \centering 
+    \includegraphics[width=\linewidth]{Code/Figures/closed_loop_ac_closed_from_open.pdf}
+    \caption{The closed loop gain obtained from the open loop gain using $A_{CL}=\dfrac{A_{OL}}{1+A_{OL}\beta}(1-\beta)$}
+\end{figure}

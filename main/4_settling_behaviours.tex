@@ -1,0 +1,30 @@
+\section{Plot of settling behavior}
+\label{sec:plot_settling}
+\textit{
+    Plot the settling accuracy versus time without over-designing according to the following equation:
+    \begin{equation}
+        \text{Accuracy}\;[dB] = 20\log_{10}\left(\dfrac{1.2\;[V]}{\vert V_{\text{virtual\_ground}}\vert+1n}\right)
+    \end{equation}
+}
+\begin{figure}[ht!]
+    \centering 
+    \includegraphics[width=\linewidth]{Code/Figures/closed_loop_settling.pdf}
+    \caption{Settling accuracy without annotations}
+\end{figure}
+
+Annotations and analysis can be found in the next section.
+
+\newpage 
+\section{Plot of settling behavior (annotated)}
+\textit{
+    Determine $T_{settle}, T_{40dB},T_{48.69dB}$ to calculate the closed-loop settling constant $\tau_{cl}$ and closed-loop bandwidth $BW_{cl}$ (and compare them to \autoref{sec:bode_open} and \ref{sec:bode_closed})
+}
+
+The plot and annotations differ $1 \mu s$, since this is subtracted from the annotations due to the $1 \mu s$ delay of the input step function (see \autoref{app:transient_analysis})
+\begin{figure}[ht!]
+    \centering 
+    \includegraphics[width=\linewidth]{Code/Figures/closed_loop_settling_annotated.pdf}
+    \caption{Settling accuracy with annotations}
+\end{figure}
+
+The time constant of the settling behaviour and AC analysis differ slightly. This is due the the fact that the settling behaviour is more realistic. The AC analysis uses a small-signal model and does not actually give insight in the entire behaviour. As also mentioned in the assignment, you can clearly see the slewing of the graph due to it not being a straight line. 

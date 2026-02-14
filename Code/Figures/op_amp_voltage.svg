@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:s="https://github.com/nturley/netlistsvg" width="1301.795" height="871.812" viewBox="577.6 -238.4 1301.795 871.812">
+    <path stroke="#000" stroke-linecap="round" stroke-width="3" d="M1693.967-217.391h-592m-144 48h-256m336 0h-80m400 0h-320m400 0h-80m-320 16v-16m320 16v-16m-160 32h-112m224 0h-112m-240 32v-64m80 64h-80m480 0v-64m0 64h-80m-320 64v-16m64 16v-176m0 176h-64m320 0v-16m0 16h-64m272 0h-208m-320 48v-48m320 48v-48m208 48v-48m128 48v-224m-592 240h-16m224 0h-16m-336 32v-160m80 160h-80m480 0v-160m0 160h-80m448 32h-64m-448 32h-96m368 0v-16m64 16h-64m128 0v-16m0 16h-64m-112 16v-48m0 48h-64m-416 64v-96m0 96h-112m160 0h-48m320 0v-96m0 96h-48m160 0h-112m-192 80h-48m128 0h-16m-16 32h-16m-160 16v-128m320 128v-128m272 128v-208m-592 256h-80m480 0h-80m352 0h-80m-528 32h-16m224 0h-16m288 0h-48m-240 32v-32m240 32v-32m0 32h-240m-256 32v-48m64 48h-64m320 0v-48m0 48h-64m-256 16v-16m320 16v-16m272 16v-64m-672 112v-160m80 160h-80m480 0v-160m0 160h-80m352 0v-160m0 160h-80m-512 32v-288m0 288h-32m224 0h-192m464 0h-64m-560 32v-64m80 64v-16m0 16h-80m224 0h-144m320 0v-16m0 16h-176m256 0v-64m0 64h-80m272 0v-16m0 16h-192m272 0v-64m0 64h-80"/>
+    <circle cx="957.967" cy="-169.391" r="4.5"/>
+    <circle cx="1037.967" cy="-169.391" r="4.5"/>
+    <circle cx="1357.967" cy="-169.391" r="4.5"/>
+    <circle cx="957.967" cy="-105.391" r="4.5"/>
+    <circle cx="1437.967" cy="-105.391" r="4.5"/>
+    <circle cx="1037.967" cy="-41.391" r="4.5"/>
+    <circle cx="1357.967" cy="-41.391" r="4.5"/>
+    <circle cx="1629.967" cy="118.609" r="4.5"/>
+    <circle cx="1037.967" cy="198.609" r="4.5"/>
+    <circle cx="1357.967" cy="198.609" r="4.5"/>
+    <circle cx="1037.967" cy="470.609" r="4.5"/>
+    <circle cx="1357.967" cy="470.609" r="4.5"/>
+    <circle cx="957.967" cy="534.609" r="4.5"/>
+    <circle cx="1437.967" cy="534.609" r="4.5"/>
+    <circle cx="1709.967" cy="534.609" r="4.5"/>
+    <circle cx="1117.967" cy="566.609" r="4.5"/>
+    <circle cx="1037.967" cy="598.609" r="4.5"/>
+    <circle cx="1357.967" cy="598.609" r="4.5"/>
+    <circle cx="1437.967" cy="598.609" r="4.5"/>
+    <circle cx="1629.967" cy="598.609" r="4.5"/>
+    <g s:height="96" s:type="pmos4" s:width="48">
+        <path stroke="#000" stroke-linecap="round" stroke-width="3" d="M1357.967 22.609v-16m-32 16h32m-32 32h8m24 0-24 4m24-4-24-4m0 8v-8m-8 44v-16m0-16v-16m0-16v-16m-16 8h8m0 64v-64m40 64h-32m32 16v-16"/>
+        <text x="53" y="32.4" class="text-group" font-family="'Times New Roman'" font-size="24" transform="translate(1309.967 54.609)">Mp2</text>
+        <text x="56" y="80.4" class="text-group" font-family="'Times New Roman'" font-size="24" transform="translate(1309.967 -41.391)">pch</text>
+    </g>
+    <g s:height="96" s:type="nmos4" s:width="48">
+        <path stroke="#000" stroke-linecap="round" stroke-width="3" d="M1357.967 406.609v16m-32-16h32m-8-32h8m-32 0 24-4m-24 4 24 4m0-8v8m-24-44v16m0 16v16m0 16v16m-16-8h8m0-64v64m40-64h-32m32-16v16"/>
+        <text x="57" y="29.4" class="text-group" font-family="'Times New Roman'" font-size="24" transform="translate(1309.967 326.609)">Mn6</text>
+        <text x="56" y="80.4" class="text-group" font-family="'Times New Roman'" font-size="24" transform="translate(1309.967 326.609)">nch</text>
+    </g>
+    <g s:height="96" s:type="pmos4" s:width="48">
+        <path stroke="#000" stroke-linecap="round" stroke-width="3" d="M1037.967 22.609v-16m32 16h-32m32 32h-8m-24 0 24 4m-24-4 24-4m0 8v-8m8 44v-16m0-16v-16m0-16v-16m16 8h-8m0 64v-64m-40 64h32m-32 16v-16"/>
+        <text x="53" y="32.4" class="text-group" font-family="'Times New Roman'" font-size="24" text-anchor="end" transform="translate(979.967 54.609)">Mp4</text>
+        <text x="56" y="80.4" class="text-group" font-family="'Times New Roman'" font-size="24" text-anchor="end" transform="translate(973.967 -41.391)">pch</text>
+    </g>
+    <g s:height="161" s:type="Biasing_circuit" s:width="223">
+        <path stroke="#000" stroke-linecap="round" stroke-width="3" d="M801.943 373.534h32m-33 48h32m-31 48h32m-160-96h32m-33 48h32m-31 48h32m48-191v32"/>
+        <path fill="none" stroke="#000" stroke-width="3" d="M802.943 309.534v192h-98v-192z"/>
+        <text x="-17" y="-260.8" class="text-group" font-family="'Times New Roman'" font-size="24" text-anchor="middle" transform="translate(770.943 788.534)">X1</text>
+    </g>
+    <g s:height="186" s:type="gain_boosting_nmos" s:width="192">
+        <path stroke="#000" stroke-linecap="round" stroke-width="3" d="M1133.967 470.609h-32m33-64h-32m191 0h-32m32 64h-32m-64-128v-32"/>
+        <path fill="none" stroke="#000" stroke-width="3" d="M1134.967 342.609h128v154h-128z"/>
+        <text x="6" y="80.2" class="text-group" font-family="'Times New Roman'" font-size="24" text-anchor="middle" transform="translate(1197.967 438.609)">X3</text>
+    </g>
+    <g s:height="186" s:type="gain_boosting_pmos" s:width="192">
+        <path stroke="#000" stroke-linecap="round" stroke-width="3" d="M1133.967-41.391h-32m33 64h-32m191 0h-32m32-64h-32m-64 160v-32"/>
+        <path fill="none" stroke="#000" stroke-width="3" d="M1133.967-67.391h128v154h-128z"/>
+        <text y="-60.8" class="text-group" font-family="'Times New Roman'" font-size="24" text-anchor="middle" transform="translate(1197.967 -9.391)">X4</text>
+    </g>
+    <g s:height="124" s:type="CMFB" s:width="224">
+        <path stroke="#000" stroke-linecap="round" stroke-width="3" d="M1085.967 198.609h32m48 48v32m64-32v32m48-80h32"/>
+        <path fill="none" stroke="#000" stroke-width="3" d="M1117.967 154.609h160v92h-160z"/>
+        <text x="17" y="-24.8" class="text-group" font-family="'Times New Roman'" font-size="24" text-anchor="middle" transform="translate(1181.967 198.609)">X2</text>
+    </g>
+    <g s:height="96" s:type="pmos4" s:width="48">
+        <path stroke="#000" stroke-linecap="round" stroke-width="3" d="M1037.967-137.391v-16m32 16h-32m32 32h-8m-24 0 24 4m-24-4 24-4m0 8v-8m8 44v-16m0-16v-16m0-16v-16m16 8h-8m0 64v-64m-40 64h32m-32 16v-16"/>
+        <text x="53" y="32.4" class="text-group" font-family="'Times New Roman'" font-size="24" text-anchor="end" transform="translate(979.967 -105.391)">Mp3</text>
+        <text x="56" y="80.4" class="text-group" font-family="'Times New Roman'" font-size="24" text-anchor="end" transform="translate(973.967 -201.391)">pch</text>
+    </g>
+    <g s:height="96" s:type="pmos4" s:width="48">
+        <path stroke="#000" stroke-linecap="round" stroke-width="3" d="M1357.967-137.391v-16m-32 16h32m-32 32h8m24 0-24 4m24-4-24-4m0 8v-8m-8 44v-16m0-16v-16m0-16v-16m-16 8h8m0 64v-64m40 64h-32m32 16v-16"/>
+        <text x="53" y="32.4" class="text-group" font-family="'Times New Roman'" font-size="24" transform="translate(1309.967 -105.391)">Mp1</text>
+        <text x="56" y="80.4" class="text-group" font-family="'Times New Roman'" font-size="24" transform="translate(1309.967 -201.391)">pch</text>
+    </g>
+    <g s:height="96" s:type="nmos4" s:width="48">
+        <path stroke="#000" stroke-linecap="round" stroke-width="3" d="M1037.967 406.609v16m32-16h-32m8-32h-8m32 0-24-4m24 4-24 4m0-8v8m24-44v16m0 16v16m0 16v16m16-8h-8m0-64v64m-40-64h32m-32-16v16"/>
+        <text x="57" y="29.4" class="text-group" font-family="'Times New Roman'" font-size="24" text-anchor="end" transform="translate(971.967 326.609)">Mn8</text>
+        <text x="56" y="80.4" class="text-group" font-family="'Times New Roman'" font-size="24" text-anchor="end" transform="translate(973.967 326.609)">nch</text>
+    </g>
+    <g s:height="96" s:type="nmos4" s:width="48">
+        <path stroke="#000" stroke-linecap="round" stroke-width="3" d="M1357.967 566.609v16m-32-16h32m-8-32h8m-32 0 24-4m-24 4 24 4m0-8v8m-24-44v16m0 16v16m0 16v16m-16-8h8m0-64v64m40-64h-32m32-16v16"/>
+        <text x="57" y="29.4" class="text-group" font-family="'Times New Roman'" font-size="24" transform="translate(1309.967 486.609)">Mn5</text>
+        <text x="56" y="80.4" class="text-group" font-family="'Times New Roman'" font-size="24" transform="translate(1309.967 486.609)">nch</text>
+    </g>
+    <g s:height="96" s:type="nmos4" s:width="48">
+        <path stroke="#000" stroke-linecap="round" stroke-width="3" d="M1037.967 566.609v16m32-16h-32m8-32h-8m32 0-24-4m24 4-24 4m0-8v8m24-44v16m0 16v16m0 16v16m16-8h-8m0-64v64m-40-64h32m-32-16v16"/>
+        <text x="57" y="29.4" class="text-group" font-family="'Times New Roman'" font-size="24" text-anchor="end" transform="translate(971.967 486.609)">Mn7</text>
+        <text x="56" y="80.4" class="text-group" font-family="'Times New Roman'" font-size="24" text-anchor="end" transform="translate(973.967 486.609)">nch</text>
+    </g>
+    <g s:height="96" s:type="nmos4" s:width="48">
+        <path stroke="#000" stroke-linecap="round" stroke-width="3" d="M1629.967 566.609v16m-32-16h32m-8-32h8m-32 0 24-4m-24 4 24 4m0-8v8m-24-44v16m0 16v16m0 16v16m-16-8h8m0-64v64m40-64h-32m32-16v16"/>
+        <text x="57" y="29.4" class="text-group" font-family="'Times New Roman'" font-size="24" transform="translate(1581.967 486.609)">Mn1</text>
+        <text x="56" y="80.4" class="text-group" font-family="'Times New Roman'" font-size="24" transform="translate(1581.967 486.609)">nch</text>
+    </g>
+    <g s:height="96" s:type="nmos4" s:width="48">
+        <path stroke="#000" stroke-linecap="round" stroke-width="3" d="M1629.967 406.609v16m-32-16h32m-8-32h8m-32 0 24-4m-24 4 24 4m0-8v8m-24-44v16m0 16v16m0 16v16m-16-8h8m0-64v64m40-64h-32m32-16v16"/>
+        <text x="57" y="29.4" class="text-group" font-family="'Times New Roman'" font-size="24" transform="translate(1581.967 326.609)">Mn2</text>
+        <text x="56" y="80.4" class="text-group" font-family="'Times New Roman'" font-size="24" transform="translate(1581.967 326.609)">nch</text>
+    </g>
+    <g s:height="96" s:type="nmos4" s:width="48">
+        <path stroke="#000" stroke-linecap="round" stroke-width="3" d="M1565.967 86.609v16m-32-16h32m-8-32h8m-32 0 24-4m-24 4 24 4m0-8v8m-24-44v16m0 16v16m0 16v16m-16-8h8m0-64v64m40-64h-32m32-16v16"/>
+        <text x="57" y="29.4" class="text-group" font-family="'Times New Roman'" font-size="24" transform="translate(1517.967 6.609)">Mn3</text>
+        <text x="56" y="80.4" class="text-group" font-family="'Times New Roman'" font-size="24" transform="translate(1517.967 6.609)">nch</text>
+    </g>
+    <g s:height="96" s:type="nmos4" s:width="48">
+        <path stroke="#000" stroke-linecap="round" stroke-width="3" d="M1693.967 86.609v16m32-16h-32m8-32h-8m32 0-24-4m24 4-24 4m0-8v8m24-44v16m0 16v16m0 16v16m16-8h-8m0-64v64m-40-64h32m-32-16v16"/>
+        <text x="57" y="29.4" class="text-group" font-family="'Times New Roman'" font-size="24" text-anchor="end" transform="translate(1627.967 6.609)">Mn4</text>
+        <text x="56" y="80.4" class="text-group" font-family="'Times New Roman'" font-size="24" text-anchor="end" transform="translate(1629.967 6.609)">nch</text>
+    </g>
+    <text x="663.967" y="-160.991" class="text-group" font-family="'Times New Roman'" font-size="24" text-anchor="end">Vdd</text>
+    <path stroke="#000" stroke-linecap="round" stroke-width="3" d="m701.967-169.391-16 16m0 0h-16m0 0v-32m0 0h16m0 0 16 16" class="io-pin"/>
+    <path stroke="#000" stroke-linecap="round" stroke-width="3" d="M1677.967 54.609h32m-32 0 16 16m16-16-16 16m-144-16h32m-32 0 16 16m16-16-16 16" class="ground-flag"/>
+    <text x="1415.967" y="143.009" class="text-group" font-family="'Times New Roman'" font-size="24" text-anchor="end">Vi+</text>
+    <path stroke="#000" stroke-linecap="round" stroke-width="3" d="m1453.967 134.609-16 16m0 0h-16m0 0v-32m0 0h16m0 0 16 16" class="io-pin"/>
+    <text x="1843.967" y="95.009" class="text-group" font-family="'Times New Roman'" font-size="24">Vi-</text>
+    <path stroke="#000" stroke-linecap="round" stroke-width="3" d="m1805.967 86.609 16-16m0 0h16m0 0v32m0 0h-16m0 0-16-16" class="io-pin"/>
+    <text x="-315.534" y="762.343" class="text-group" font-family="'Times New Roman'" font-size="24" text-anchor="end" transform="rotate(-90)">Vddb</text>
+    <path stroke="#000" stroke-linecap="round" stroke-width="3" d="m753.943 278.534-16-16m0 0v-16m0 0h32m0 0v16m0 0-16 16" class="io-pin"/>
+    <path stroke="#000" stroke-linecap="round" stroke-width="3" d="M1197.967 598.609h-32m32 0-16-16m-16 16 16-16" class="ground-flag"/>
+    <text x="625.943" y="477.934" class="text-group" font-family="'Times New Roman'" font-size="24" text-anchor="end">Vbn</text>
+    <text x="1245.967" y="287.009" class="text-group" font-family="'Times New Roman'" font-size="24">Vbn</text>
+    <text x="625.943" y="381.934" class="text-group" font-family="'Times New Roman'" font-size="24" text-anchor="end">Vcn</text>
+    <text x="1213.967" y="319.009" class="text-group" font-family="'Times New Roman'" font-size="24">Vcn</text>
+    <text x="625.943" y="429.934" class="text-group" font-family="'Times New Roman'" font-size="24" text-anchor="end">Vsn</text>
+    <text x="881.943" y="381.934" class="text-group" font-family="'Times New Roman'" font-size="24">Vbp</text>
+    <text x="873.967" y="207.009" class="text-group" font-family="'Times New Roman'" font-size="24" text-anchor="end">Vo+</text>
+    <path stroke="#000" stroke-linecap="round" stroke-width="3" d="m893.967 182.609-16 16m32 16h-16m16 0v-32m-16 0h16m-32 16 16 16m16-16h16" class="io-pin"/>
+    <text x="1521.967" y="207.009" class="text-group" font-family="'Times New Roman'" font-size="24">Vo-</text>
+    <path stroke="#000" stroke-linecap="round" stroke-width="3" d="m1501.967 214.609 16-16m-32-16h16m-16 0v32m16 0h-16m32-16-16-16m-16 16h-16" class="io-pin"/>
+    <text x="1517.967" y="575.009" class="text-group" font-family="'Times New Roman'" font-size="24" text-anchor="end">Vbn</text>
+    <text x="1197.967" y="-142.191" class="text-group" font-family="'Times New Roman'" font-size="24" text-anchor="middle">Vbp</text>
+    <text x="881.943" y="477.934" class="text-group" font-family="'Times New Roman'" font-size="24">Vcp</text>
+    <text x="1293.967" y="127.009" class="text-group" font-family="'Times New Roman'" font-size="24">Vcp</text>
+    <text x="881.943" y="429.934" class="text-group" font-family="'Times New Roman'" font-size="24">Vsp</text>
+    <path d="M673.943 373.534h-48m256 0h-48m-160 48h-48m256 0h-48m-160 48h-48m256 0h-48" style="stroke:#000;stroke-width:3;stroke-linecap:round"/>
+    <text xml:space="preserve" x="755.744" y="-140.858" style="font-style:normal;font-variant:normal;font-weight:700;font-stretch:normal;font-size:26.6667px;line-height:.9;font-family:&quot;Times New Roman&quot;;-inkscape-font-specification:&quot;Times New Roman, Bold&quot;;text-align:start;letter-spacing:-.19px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:red;fill-rule:evenodd;stroke-width:2.989;stroke-linecap:round;stroke-linejoin:round"><tspan x="755.744" y="-140.858">1.80 V</tspan></text>
+    <text xml:space="preserve" x="1459.712" y="156.256" style="font-size:26.6667px;line-height:.9;font-family:&quot;Times New Roman&quot;;-inkscape-font-specification:&quot;Times New Roman, &quot;;text-align:start;letter-spacing:-.19px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000;fill-rule:evenodd;stroke-width:2.989;stroke-linecap:round;stroke-linejoin:round"><tspan x="1459.712" y="156.256" style="font-style:normal;font-variant:normal;font-weight:700;font-stretch:normal;font-family:&quot;Times New Roman&quot;;-inkscape-font-specification:&quot;Times New Roman, Bold&quot;;fill:red">0.90 V</tspan></text>
+    <text xml:space="preserve" x="1743.688" y="110.489" style="font-style:normal;font-variant:normal;font-weight:700;font-stretch:normal;font-size:26.6667px;line-height:.9;font-family:&quot;Times New Roman&quot;;-inkscape-font-specification:&quot;Times New Roman, Bold&quot;;text-align:start;letter-spacing:-.19px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:red;fill-rule:evenodd;stroke-width:2.989;stroke-linecap:round;stroke-linejoin:round"><tspan x="1743.688" y="110.489">0.90 V</tspan></text>
+    <text xml:space="preserve" x="1645.141" y="237.424" style="font-style:normal;font-variant:normal;font-weight:700;font-stretch:normal;font-size:26.6667px;line-height:.9;font-family:&quot;Times New Roman&quot;;-inkscape-font-specification:&quot;Times New Roman, Bold&quot;;text-align:start;letter-spacing:-.19px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:red;fill-rule:evenodd;stroke-width:2.989;stroke-linecap:round;stroke-linejoin:round"><tspan x="1645.141" y="237.424">0.41 V</tspan></text>
+    <text xml:space="preserve" x="1485.731" y="-56.327" style="font-style:normal;font-variant:normal;font-weight:700;font-stretch:normal;font-size:26.6667px;line-height:.9;font-family:&quot;Times New Roman&quot;;-inkscape-font-specification:&quot;Times New Roman, Bold&quot;;text-align:start;letter-spacing:-.19px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:red;fill-rule:evenodd;stroke-width:2.989;stroke-linecap:round;stroke-linejoin:round"><tspan x="1485.731" y="-56.327">1.36 V</tspan></text>
+    <text xml:space="preserve" x="1108.5" y="-195.554" style="font-style:normal;font-variant:normal;font-weight:700;font-stretch:normal;font-size:26.6667px;line-height:.9;font-family:&quot;Times New Roman&quot;;-inkscape-font-specification:&quot;Times New Roman, Bold&quot;;text-align:start;letter-spacing:-.19px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:red;fill-rule:evenodd;stroke-width:2.989;stroke-linecap:round;stroke-linejoin:round"><tspan x="1108.5" y="-195.554">1.36 V</tspan></text>
+    <text xml:space="preserve" x="1263.467" y="9.609" style="font-style:normal;font-variant:normal;font-weight:700;font-stretch:normal;font-size:26.6667px;line-height:.9;font-family:&quot;Times New Roman&quot;;-inkscape-font-specification:&quot;Times New Roman, Bold&quot;;text-align:start;letter-spacing:-.19px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:red;fill-rule:evenodd;stroke-width:2.989;stroke-linecap:round;stroke-linejoin:round"><tspan x="1263.467" y="9.609">0.40 V</tspan></text>
+    <text xml:space="preserve" x="1638.199" y="468.251" style="font-size:26.6667px;line-height:.9;font-family:&quot;Times New Roman&quot;;-inkscape-font-specification:&quot;Times New Roman, &quot;;text-align:start;letter-spacing:-.19px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000;fill-rule:evenodd;stroke-width:2.989;stroke-linecap:round;stroke-linejoin:round"><tspan x="1638.199" y="468.251" style="font-style:normal;font-variant:normal;font-weight:700;font-stretch:normal;font-family:&quot;Times New Roman&quot;;-inkscape-font-specification:&quot;Times New Roman, Bold&quot;;fill:red">0.14 V</tspan></text>
+    <text xml:space="preserve" x="810.699" y="359.515" style="font-size:26.6667px;line-height:.9;font-family:&quot;Times New Roman&quot;;-inkscape-font-specification:&quot;Times New Roman, &quot;;text-align:start;letter-spacing:-.19px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000;fill-rule:evenodd;stroke-width:2.989;stroke-linecap:round;stroke-linejoin:round"><tspan x="810.699" y="359.515" style="font-weight:700;fill:red">0.98 V</tspan></text>
+    <text xml:space="preserve" x="1166.06" y="-113.884" style="font-size:26.6667px;line-height:.9;font-family:&quot;Times New Roman&quot;;-inkscape-font-specification:&quot;Times New Roman, &quot;;text-align:start;letter-spacing:-.19px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:red;fill-rule:evenodd;stroke-width:2.989;stroke-linecap:round;stroke-linejoin:round"><tspan x="1166.06" y="-113.884" style="font-style:normal;font-variant:normal;font-weight:700;font-stretch:normal;font-family:&quot;Times New Roman&quot;;-inkscape-font-specification:&quot;Times New Roman, Bold&quot;">0.98 V</tspan></text>
+    <text xml:space="preserve" x="930.16" y="185.159" style="font-style:normal;font-variant:normal;font-weight:700;font-stretch:normal;font-size:26.6667px;line-height:.9;font-family:&quot;Times New Roman&quot;;-inkscape-font-specification:&quot;Times New Roman, Bold&quot;;text-align:start;letter-spacing:-.19px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:red;fill-rule:evenodd;stroke-width:2.989;stroke-linecap:round;stroke-linejoin:round"><tspan x="930.16" y="185.159">0.90 V</tspan></text>
+    <text xml:space="preserve" x="810.699" y="412.495" style="font-size:26.6667px;line-height:.9;font-family:&quot;Times New Roman&quot;;-inkscape-font-specification:&quot;Times New Roman, &quot;;text-align:start;letter-spacing:-.19px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000;fill-rule:evenodd;stroke-width:2.989;stroke-linecap:round;stroke-linejoin:round"><tspan x="810.699" y="412.495" style="font-weight:700;fill:red">1.36 V</tspan></text>
+    <text xml:space="preserve" x="810.699" y="460.116" style="font-size:26.6667px;line-height:.9;font-family:&quot;Times New Roman&quot;;-inkscape-font-specification:&quot;Times New Roman, &quot;;text-align:start;letter-spacing:-.19px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000;fill-rule:evenodd;stroke-width:2.989;stroke-linecap:round;stroke-linejoin:round"><tspan x="810.699" y="460.116" style="font-weight:700;fill:red">0.40 V</tspan></text>
+    <text xml:space="preserve" x="550.393" y="354.913" style="font-style:normal;font-variant:normal;font-weight:700;font-stretch:normal;font-size:26.6667px;line-height:.9;font-family:&quot;Times New Roman&quot;;-inkscape-font-specification:&quot;Times New Roman, Bold&quot;;text-align:start;letter-spacing:-.19px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:red;fill-rule:evenodd;stroke-width:2.989;stroke-linecap:round;stroke-linejoin:round"><tspan x="625.901" y="354.913">0.80 V</tspan></text>
+    <text xml:space="preserve" x="550.393" y="407.893" style="font-style:normal;font-variant:normal;font-weight:700;font-stretch:normal;font-size:26.6667px;line-height:.9;font-family:&quot;Times New Roman&quot;;-inkscape-font-specification:&quot;Times New Roman, Bold&quot;;text-align:start;letter-spacing:-.19px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:red;fill-rule:evenodd;stroke-width:2.989;stroke-linecap:round;stroke-linejoin:round"><tspan x="624.443" y="407.893">0.15 V</tspan></text>
+    <text xml:space="preserve" x="704.125" y="455.515" style="font-size:26.6667px;line-height:.9;font-family:&quot;Times New Roman&quot;;-inkscape-font-specification:&quot;Times New Roman, &quot;;text-align:end;letter-spacing:-.19px;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:red;fill-rule:evenodd;stroke-width:2.989;stroke-linecap:round;stroke-linejoin:round"><tspan x="703.935" y="455.515" style="font-weight:700;fill:red">0.63 V</tspan></text>
+    <text xml:space="preserve" x="1580.657" y="557.495" style="font-size:26.6667px;line-height:.9;font-family:&quot;Times New Roman&quot;;-inkscape-font-specification:&quot;Times New Roman, &quot;;text-align:end;letter-spacing:-.19px;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#000;fill-rule:evenodd;stroke-width:2.989;stroke-linecap:round;stroke-linejoin:round"><tspan x="1580.467" y="557.495" style="font-style:normal;font-variant:normal;font-weight:700;font-stretch:normal;font-family:&quot;Times New Roman&quot;;-inkscape-font-specification:&quot;Times New Roman, Bold&quot;;fill:red">0.63 V</tspan></text>
+    <text xml:space="preserve" x="1534.347" y="429.21" style="font-size:26.6667px;line-height:.9;font-family:&quot;Times New Roman&quot;;-inkscape-font-specification:&quot;Times New Roman, &quot;;text-align:end;letter-spacing:-.19px;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#000;fill-rule:evenodd;stroke-width:2.989;stroke-linecap:round;stroke-linejoin:round"><tspan x="1534.157" y="429.21" style="font-style:normal;font-variant:normal;font-weight:700;font-stretch:normal;font-family:&quot;Times New Roman&quot;;-inkscape-font-specification:&quot;Times New Roman, Bold&quot;;fill:red">0.80 V</tspan></text>
+    <text xml:space="preserve" x="1226.318" y="556.621" style="font-size:26.6667px;line-height:.9;font-family:&quot;Times New Roman&quot;;-inkscape-font-specification:&quot;Times New Roman, &quot;;text-align:end;letter-spacing:-.19px;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#000;fill-rule:evenodd;stroke-width:2.989;stroke-linecap:round;stroke-linejoin:round"><tspan x="1226.127" y="556.621" style="font-style:normal;font-variant:normal;font-weight:700;font-stretch:normal;font-family:&quot;Times New Roman&quot;;-inkscape-font-specification:&quot;Times New Roman, Bold&quot;;fill:red">0.63 V</tspan></text>
+    <text xml:space="preserve" x="943.287" y="464.854" style="font-size:26.6667px;line-height:.9;font-family:&quot;Times New Roman&quot;;-inkscape-font-specification:&quot;Times New Roman, &quot;;text-align:start;letter-spacing:-.19px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000;fill-rule:evenodd;stroke-width:2.989;stroke-linecap:round;stroke-linejoin:round"><tspan x="1037.967" y="464.854" style="font-style:normal;font-variant:normal;font-weight:700;font-stretch:normal;font-family:&quot;Times New Roman&quot;;-inkscape-font-specification:&quot;Times New Roman, Bold&quot;;text-align:start;text-anchor:start;fill:red">0.15 V</tspan></text>
+    <text xml:space="preserve" x="1163.86" y="462.48" style="font-size:26.6667px;line-height:.9;font-family:&quot;Times New Roman&quot;;-inkscape-font-specification:&quot;Times New Roman, &quot;;text-align:start;letter-spacing:-.19px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000;fill-rule:evenodd;stroke-width:2.989;stroke-linecap:round;stroke-linejoin:round"><tspan x="1262.967" y="462.48" style="font-style:normal;font-variant:normal;font-weight:700;font-stretch:normal;font-family:&quot;Times New Roman&quot;;-inkscape-font-specification:&quot;Times New Roman, Bold&quot;;text-align:start;text-anchor:start;fill:red">0.15 V</tspan></text>
+    <text xml:space="preserve" x="1383.227" y="186.256" style="font-size:26.6667px;line-height:.9;font-family:&quot;Times New Roman&quot;;-inkscape-font-specification:&quot;Times New Roman, &quot;;text-align:start;letter-spacing:-.19px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000;fill-rule:evenodd;stroke-width:2.989;stroke-linecap:round;stroke-linejoin:round"><tspan x="1383.227" y="186.256" style="font-style:normal;font-variant:normal;font-weight:700;font-stretch:normal;font-family:&quot;Times New Roman&quot;;-inkscape-font-specification:&quot;Times New Roman, Bold&quot;;fill:red">0.90 V</tspan></text>
+</svg>

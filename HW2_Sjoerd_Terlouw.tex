@@ -1,0 +1,85 @@
+\documentclass{article} % Font size
+\usepackage{amsmath, amsfonts, amsthm} % Math packages
+\usepackage{listings} % Code listings, with syntax highlighting
+\usepackage[english]{babel} % English language hyphenation
+\usepackage{graphicx} % Required for inserting images
+\usepackage{booktabs} % Required for better horizontal rules in tables
+\usepackage{microtype}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{pgfplots}
+\usepackage{hyperref}
+\usepackage{svg}
+\usepackage{tabularray}
+\UseTblrLibrary{counter}
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\usepackage{enumitem} % Required for list customisation
+\usepackage{tikz}
+\setlist{noitemsep} % No spacing between list items
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT MARGINS
+%----------------------------------------------------------------------------------------
+
+\usepackage{geometry} % Required for adjusting page dimensions and margins
+
+\geometry{
+	paper=a4paper, % Paper size, change to letterpaper for US letter size
+	top=2.5cm, % Top margin
+	bottom=3cm, % Bottom margin
+	left=2cm, % Left margin
+	right=2cm, % Right margin
+	headheight=0.75cm, % Header height
+	footskip=1.5cm, % Space from the bottom margin to the baseline of the footer
+	headsep=0.75cm, % Space from the top margin to the baseline of the header
+	%showframe, % Uncomment to show how the type block is set on the page
+}
+
+\usepackage{subcaption}
+\usepackage{listings}
+\usepackage{pdflscape}
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\title{	
+	\normalfont\normalsize
+	\textsc{TU Delft}\\ % Your university, school and/or department name(s)
+	\textsc{Analogue CMOS Design I | EE4520}\\ % The course name
+	\vspace{10pt} % Whitespace
+	\rule{\linewidth}{0.5pt}\\ % Thin top horizontal rule
+	\vspace{20pt} % Whitespace
+	{\huge Homework 2}\\ % The assignment title
+	\vspace{12pt} % Whitespace
+	\rule{\linewidth}{2pt}\\ % Thick bottom horizontal rule
+	\vspace{12pt} % Whitespace
+}
+
+\author{\LARGE Sjoerd Terlouw \\ \small 5852455} % Your name
+
+\date{\normalsize\today} % Today's date (\today) or a custom date
+
+%----------------------------------------------------------------------------------------
+%	Document
+%--------------------------------------------------------------------------------------
+
+\begin{document}
+\maketitle
+\begin{abstract}
+	Design of a discrete-time fully differential folded-cascode amplifier according to specifications in a 
+	feedback situation with a closed-loop gain of 8 times. The amplifier uses ideal gain-boosting and ideal common-mode feedback and is biased 
+	by the previous designed biasing block.
+\end{abstract}
+\newpage
+
+\include{main/1_table_of_results}
+\include{main/2_schematics}
+\include{main/3_bode_diagrams}
+\include{main/4_settling_behaviours}
+\include{main/5_noise_density}
+\include{main/6_design_process}
+\include{main/appendices}
+
+\end{document}

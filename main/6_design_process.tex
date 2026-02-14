@@ -1,0 +1,44 @@
+\vspace{-1em}
+\section{Design process}
+\textit{Explain arrival at final biasing and sizing and reasoning behind design steps \\ Also show how the open loop gain $A$, loop gain $A\beta$, closed-loop gain bandwidth $B_{cl}$ and settling-curve are linked}
+\vspace{-1em}
+\subsection{Initial start}
+\vspace{-0.5em}
+First up, for easy processing and analysis, a parameterized Python file was coupled to \LaTeX \; and LTSpice such that this entire document can be automatically generated with all graphs, annotations and other values by only changing the variables $S_{a}$, $R_{34}$, $R_{mp}$, $I_{bmain}$ and $C_{in}$. 
+For testing to see if this works, the only requirement is that all transistors are in saturation. This is the case if the pMOS and nMOS transistors in the opamp are of similar size to the transistor in the biasing circuit. After this works, the actual theoretical analysis can start. 
+\vspace{-1em}
+\subsection{Theoretical analysis} 
+\vspace{-0.5em}
+Ideally, the feedback network is given by:
+\begin{equation}
+    \beta = \dfrac{Z_{in}}{Z_{in}+Z_{fb}} = \dfrac{1}{9} = -19.08 dB
+\end{equation}
+Power can be determined to be approximately 250 $\mu W$ to achieve high enough $FoM$ with $\tau, SNR$ according to requirements and is almost entirely determined by twice the current going into $MP_{3}$, so 
+\begin{equation}
+    \begin{cases}
+        P \approx 4m \cdot S_{a}R_{mp}(V_{GTp3})^{2}  \\ 
+        V_{GTp3} \approx 10 \sqrt{\dfrac{I_{bmain}}{S_{ab}}}
+    \end{cases}
+    \to P \approx 0.4 S_{a} R_{mp} I_{bmain} / S_{ab} \approx 250 \mu W
+\end{equation}
+The DC gain is given by:
+\begin{equation}
+    \dfrac{V_{o}}{V_{i}} = \dfrac{A g_{b} g_{f}}{\cfrac{A g_{b}}{r_{b}} - \left(\cfrac{1}{A g_{c} r_{c} r_{d} + r_{c} + r_{d}} + \cfrac{1}{r_{b}}\right) \left(A g_{b} + \cfrac{1}{r_{f}} + \cfrac{1}{r_{b}} + \cfrac{1}{r_{a}}\right)}\footnote{Transistors: a = 1,3. b=2,4. c=6,8. d=7,5. e=2,1. f=3,4}
+\end{equation}
+It's difficult to determine the exact values for $r_{o}$ and $g_{m}$ due to secondary effects, but it is known that $r_{o} \propto 1/W$ and $g_{m} \propto W$ which makes $A_{0}$ independent on most variables. The main thing to look at is the speed of settling. This is approximately given by:
+\begin{equation}
+    f_{-3dB} \propto R_{o}C_{L}
+\end{equation}
+Here is the load capacitance not only the load capacitance that can be seen in the closed loop circuit, but also the capacitance in the CMFB, which are both proportional to the input capacitance. The output impedance is mainly determined by $S_{a}$ and $S_{ab},I_{bmain}$\footnote{Changing $I_{bmain}$ and $S_{ab}$ with the same scaling has exactly the same result and therefore only one has to be considered}. 
+
+SNR is mainly influenced by the output capacitance, which should be as small as possible while getting the correct SNR since a large capacitance ruins the speed. It is therefore convenient to use $R_{34}, R_{mp}$ and $S_{ab}$ to reduce noise, although these parameters have not that much influence. 
+\vspace{-1em}
+\subsection{Simulation}
+\vspace{-0.5em}
+Very short and simplified: started with a capacitance that is a bit too low for a correct SNR, since other parameters are better to change to increase SNR without changing settling. From there, swept $S_{a}$ and $S_{ab}$ over reasonable ranges and found correct settling speed with minimal current. From there increased $R_{34}$ significantly to reduce noise, increase settling speed and reduce current (up to a point). Reduced $R_{mp}$ to decrease current and noise at the cost of slightly increasing settling time. Then repeated this a few times to get optimal values.  
+From there used the parameterized python file to generate this document for several correct values and tuned everything a bit to increase the FoM. At the end, used Scikit-Optimize for a really tiny range around the ideal found inputs to get the last few 0.01dB.\footnote{Not terribly effective since the interface between Python and LTSpice is quite slow}. Final values are in \autoref{sec:final_values}.
+
+\vspace{-1em}
+\subsection{Settling-curve, bode plots}
+\vspace{-0.5em}
+Open loop gain is the gain of the amplifier itself $A$, which combined with $\beta$ forms the closed loop gain $A_{CL}=\dfrac{A}{1+A\beta}(1-\beta)$, so the pole of the closed gain (=-3dB frequency = bandwidth) is given by $1+A\beta = 0$, or when $A\beta=0dB$. The settling curve starts at $1/\beta = 19.08 dB$ and increases approximately 8.6dB/$\tau$ until $A$.

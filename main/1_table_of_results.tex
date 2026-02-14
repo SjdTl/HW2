@@ -1,0 +1,55 @@
+\section{Table of Results}
+\label{sec:tor}
+\NewTblrTheme{fancy}{
+\DeclareTblrTemplate{conthead}{default}{[Continued]}
+\SetTblrStyle{firsthead}{font=\bfseries}
+\SetTblrStyle{firstfoot}{fg=blue2}
+\SetTblrStyle{middlefoot}{\itshape}
+\SetTblrStyle{caption-tag}{red2}
+}
+
+\newcommand{\unit}[1]{[#1]}
+\newcounter{DesignItem}
+\newcommand{\DesignItem}{\stepcounter{DesignItem}\arabic{DesignItem}}
+
+\input{Code/Figures/result_table.tex}
+
+{\small 
+Further specifications not in the table:
+\begin{equation}
+    \begin{cases}
+        C_{CM}=C_{fb}=C_{in}/8 \\ 
+        C_{load}=C_{in} \\ 
+        A_{add}=100 \; [\;]
+    \end{cases}
+\end{equation}
+
+Parameters for transient simulation:
+\begin{equation}
+    \begin{cases}
+        V_{o}=1.2 \; [V_{pd}] \\ 
+        V_{i}=1.2/A_{cl}\;[V_{pd}] \\
+        \operatorname{max}{V_{o}}=0.8485 \;[V_{rms}]
+    \end{cases}
+\end{equation}
+
+And for biasing these relations should be fixed:
+\begin{equation}
+    \begin{cases}
+        I_{b,ncas}=r_{n}I_{b,main} \\ 
+        I_{b,pcas}=r_{p}I_{b,main} \\ 
+        C_{\text{decoupling}} = \; \sim 1 \mu F \quad \text{(on all bias lines)}
+    \end{cases}
+\end{equation}
+
+And the fingers due to current specifications 
+\begin{equation}
+    \begin{cases}
+        MN_{1,2}: \quad\quad\quad\quad\quad\; m=4 \cdot S_{A} \\ 
+        MN_{5,6}=MN_{7,8}: \quad m=4 \cdot S_{A} \\ 
+        MP_{1,3}: \quad\quad\quad\quad\quad\;\; m=4 \cdot S_{A} r_{mp} \\ 
+        MP_{2,4}: \quad\quad\quad\quad\quad\;\; m=2 \cdot S_{A} r_{mp} \\
+        MN_{3,4}: \quad\quad\quad\quad\quad\;\; m=2 \cdot S_{A} \quad \text{(suggestion)}
+    \end{cases}
+\end{equation}
+}

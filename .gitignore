@@ -1,0 +1,13 @@
+*.aux
+*.fdb_latexmk
+*.fls
+*.log 
+*.out
+*.synctex.gz
+*.synctex.gz.sum.synctex
+*.net
+*.raw
+__pychache__/*
+*.fail
+svg-inkscape
+.vscode

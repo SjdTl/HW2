@@ -1,0 +1,43 @@
+\appendix 
+\section{Transient analysis} 
+\label{app:transient_analysis}
+This section is as a convenient check for myself, just as the table of the next section
+\begin{figure}[ht!]
+	\centering 
+	\includegraphics[width=\linewidth]{Code/Figures/closed_loop_tran.pdf}
+	\caption{Ordinary transient analysis for the step input}
+\end{figure}
+\subsection{Final values}
+\label{sec:final_values}
+\input{Code/Figures/input_values.tex}
+\newpage
+\begin{landscape}
+    \section{Operating points}
+	\begin{table}[ht!]
+		\centering 
+		\input{Code/Processing/closed_loop_op1.tex}
+		\caption{Voltages from the second operating point simulation}
+		\label{tab:operating_point1}
+	\end{table}
+	Transistors $n3$ and $n4$ are in subthreshold since this is a more efficient region to operate in.
+	\begin{table}[ht!]
+		\centering 
+		\input{Code/Processing/closed_loop_op2.tex}
+		\caption{Voltages from the second operating point simulation}
+		\label{tab:operating_point2}
+	\end{table}
+\end{landscape}
+\newpage
+\section{Simulation}
+Symbol and Python files not included
+\subsection{Biasing circuit}
+\lstinputlisting[breaklines]{Code/Circuits/Biasing_circuit.asc}
+\subsection{Opamp}
+\lstinputlisting[breaklines]{Code/Circuits/op_amp.asc}
+\subsection{CMFB}
+\lstinputlisting[breaklines]{Code/Circuits/CMFB.asc}
+\subsection{Gain-boosting}
+\lstinputlisting[breaklines]{Code/Circuits/gain_boosting_nmos.asc}
+\lstinputlisting[breaklines]{Code/Circuits/gain_boosting_pmos.asc}
+\subsection{Closed loop}
+\lstinputlisting[breaklines]{Code/Circuits/closed_loop.asc}
